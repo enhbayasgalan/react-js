@@ -1,0 +1,108 @@
+#root {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.todo {
+    width: 100vh;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 300px;
+    height: 200px;
+    padding: 24px 16px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px 0px rgb(0, 0, 0, 0.16);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-text {
+    color: #000;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; 
+    letter-spacing: -0.5px;
+}
+
+.input-container {
+    display: flex;
+    height: 38px;
+    width: 310px;
+    align-items: center;
+    gap: 6px;
+    align-self: stretch;
+}
+
+.button {
+    display: flex;
+   width: 250px;
+   height: 40px;
+   flex-direction: column;
+   justify-content: center;
+    align-items: flex-start;
+    border-radius: 6px;
+    border: 1px solid var(--border-border-border, #E4E4E7);
+    margin-bottom: -20px;
+}
+
+.button-name {
+    color: #71717A;
+   font-family: Inter;
+   font-style: normal;
+   font-weight: 100;
+   line-height: normal;
+}
+
+.button-2 {
+    display: flex;
+height: 20px;
+padding: 8px 16px;
+align-items: center;
+gap: 20px;
+border-radius: 6px;
+background: #3C82F6;
+margin-bottom: -20px;
+width: 20px;
+}
+
+.bichig {
+    color: #F9F9F9;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.filter-container {
+    display: flex;
+align-items: center;
+gap: 6px;
+align-self: stretch;
+}
+
+.tab {
+    display: flex;
+height: 30px;
+padding: 4px 12px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 6px;
+background: #3C82F6;
+margin-bottom: -90px;
+width: 15px;
+color: white;
+font-weight: 300;
+}
