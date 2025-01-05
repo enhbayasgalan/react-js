@@ -13,7 +13,7 @@ export function Todo() {
                     </div>
                 </div> 
                 <div className="filter-container">
-                  
+                <p></p>
                 </div>
             </div>
         </div>
