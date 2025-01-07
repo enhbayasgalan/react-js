@@ -14,10 +14,12 @@
 
 .container {
     width: 300px;
-    height: 200px;
     padding: 24px 16px;
     border-radius: 6px;
     box-shadow: 0px 0px 12px 0px rgb(0, 0, 0, 0.16);
+    flex-direction: column;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.16);
+
 }
 
 .box {
@@ -109,6 +111,7 @@ color: white;
 font-weight: 300;
 } */
 
+/* <button style={{marginTop: "5px"}} onClick={() => handleDeleteTodo(index)} className="delete">Delete</button>
 .delete {
     display: flex;
     justify-content: center;
@@ -117,7 +120,7 @@ font-weight: 300;
     background: #FEF2F2;
     padding: 6px 12px;
     border-radius: 6px;
-}
+} */
 
 .input {
     border-radius: 6px;
@@ -132,7 +135,7 @@ font-weight: 300;
     padding: 8px 16px;
     gap: 10px;
     border-radius: 6px;
-    background: #3C82F6;
+    background: green;
     color: #E4E4E7;
 }
 
@@ -140,5 +143,24 @@ font-weight: 300;
     width: 345px;
     height: 62px;
     padding: 16px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 6px;
+}
+
+.enter {
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    width: 300px;
+}
+
+.all {
+    display: flex;
+    gap: 20px;
 }
