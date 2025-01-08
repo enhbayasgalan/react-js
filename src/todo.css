@@ -2,7 +2,11 @@
     margin: 0 auto;
     text-align: center;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .todo {
     width: 100vh;
     height: 100vh;
@@ -13,7 +17,7 @@
 }
 
 .container {
-    width: 300px;
+    width: 400px;
     padding: 24px 16px;
     border-radius: 6px;
     box-shadow: 0px 0px 12px 0px rgb(0, 0, 0, 0.16);
@@ -40,7 +44,7 @@
 .input-container {
     display: flex;
     height: 38px;
-    width: 310px;
+    width: 300px;
     align-items: center;
     gap: 6px;
     justify-content: center;
@@ -112,7 +116,7 @@ font-weight: 300;
 } */
 
 /* <button style={{marginTop: "5px"}} onClick={() => handleDeleteTodo(index)} className="delete">Delete</button>
-.delete {
+ . delete {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +124,7 @@ font-weight: 300;
     background: #FEF2F2;
     padding: 6px 12px;
     border-radius: 6px;
-} */
+}*/
 
 .input {
     border-radius: 6px;
@@ -135,32 +139,113 @@ font-weight: 300;
     padding: 8px 16px;
     gap: 10px;
     border-radius: 6px;
-    background: green;
+    background: #3C82F6;
     color: #E4E4E7;
+    border: none;
 }
 
-.davhar {
+ .davhar {
     width: 345px;
     height: 62px;
     padding: 16px;
-    /* justify-content: space-between; */
-}
+    justify-content: space-between; 
+} 
 
 .filter-container {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    gap: 6px;
+     gap: 6px;
 }
 
 .enter {
     display: flex;
     /* align-items: center;
-    justify-content: center; */
-    width: 300px;
-}
+    /* justify-content: center; */
+    justify-content: space-between;
+     width: 300px;
+    margin-top: 10px;
+    height: 42px;
+    padding: 2px;
+    border-radius: var(--radius-rounded-md, 6px);
+    background: #F3F4F6;
+    border: none;
+} 
 
 .all {
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
+
+.tag {
+    height: 25px;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background: #3C82F6;
+    margin-top: 8px;
+}
+
+
+
+.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    background: #FEF2F2;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 6px;
+}
+
+.AL {
+    height: 32px;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background: #F3F4F6;
+    margin-top: 10px;
+    border: none;
+}
+
+.p {
+    color: #6B7280;
+   text-align: center;
+   font-size: 14px;
+   font-weight: 400;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+} 
+
+.footer {
+        display: flex;
+        justify-content: space-between; 
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        border-top: 1px solid #e4e4e7; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #6b7280;
+        margin-top: 18px;
+} 
+
+ .clear {
+    background-color: #3c82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}  
+ .filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
