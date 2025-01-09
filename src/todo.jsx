@@ -11,7 +11,12 @@ export function Todo() {
 
    const [filterState, setFilterState] = useState("ALL");
 
-   
+   // logging funcation 
+   const logAction = (action, todos = "") => {
+    const time = new Date().toLocaleString();
+    const logMessage = `${time} - ${action}${task ? `: ${task}` : ""}`;
+    setLogs([...logs, logMessage])
+   }
 
    const handleInputChange = (e) => {
        setInputValue(e.target.value);
@@ -85,8 +90,8 @@ export function Todo() {
                       return (
                         <div className="enter">
                           <div style={{display: "flex", gap: "20px"}}>
-                              
-                            <input type="checkbox" onChange={() => handleTaskCheckBox(todo.id)}/>
+
+                            <input type="checkbox"  onChange={() => handleTaskCheckBox(todo.id)}/>
                             <p style={{maxWidth: "200px", overflow: "scroll"}}>   {todo.description}</p>
                      
                           </div>
@@ -102,4 +107,4 @@ export function Todo() {
       </div>
     </div>
   );
-}
+}   
